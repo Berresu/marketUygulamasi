@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+}
+
+input{
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Uygulaması</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="urunleriGetir()">
+    <h3>Market Uygulaması</h3>
+    <form id="market">
+        <label for="kategori">Ürün Kategorileri:</label>
+        <label for="kategoriSut">Süt ve Süt Ürünleri</label>
+        <input type="radio" name="kategori" id="kategoriSut" checked>
+
+        <label for="kategoriGida">Gıda Ürünleri</label>
+        <input type="radio" name="kategori" id="kategoriGida">
+
+        <label for="kategoriTemizlik">Temizlik Ürünleri</label>
+        <input type="radio" name="kategori" id="kategoriTemizlik">
+
+        <div id="urunPaneli">
+            <label for="urunler">Ürün Seçimi Yapınız:</label>
+        </div>
+
+        <label for="adetSecimi">Adet Seçimi Yapınız:</label>
+        <input type="number" name="adet" id="adetSecimi">
+
+        <input type="button" value="Sepete Ekle" id="btnEkle">
+        <select name="sepet" id="sepeteEklenenler">
+            <option value="0">Seçtiğiniz Ürünler</option>
+        </select>
+
+        <button id="btnCikar">Sepetten Çıkar</button>
+        <h4 id="sepetTutar"></h4>
+        <label for="indirim">İndirim Kodu:</label>
+        <input type="text" name="indirim" id="txtİndirim">
+        <input type="button" value="Tamamla ve Öde" id="btnTamamla">
+    </form>  
+    <script src="script.js"></script>  
+</body>
+</html>
